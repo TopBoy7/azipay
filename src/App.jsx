@@ -1,10 +1,10 @@
 import Header from "./components/landingPage/header";
-
+import HeroSection from "./components/landingPage/heroSection";
 const App = () => {
   return (
     <div>
       <Header />
-      {/* Other components can be added here */}
+      <HeroSection />
     </div>
   );
 };
