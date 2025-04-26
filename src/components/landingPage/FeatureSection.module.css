@@ -1,0 +1,94 @@
+.Container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 3rem !important;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #11453b;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #515251;
+  margin-bottom: 3rem !important;
+}
+
+.greenCardContainer {
+  padding-left: 50px;
+  position: relative;
+}
+
+.greenCardContainer p {
+  color: #fff;
+  margin-bottom: 16px !important;
+  max-width: 75%;
+}
+
+.cards {
+  position: relative;
+}
+
+.greenCard {
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(217, 235, 205, 0.14) 0,
+      rgba(217, 235, 205, 0.0266) 100%
+    ),
+    #11453b;
+  box-shadow: 0 13px 20px hsla(0, 0%, 9%, 0.2),
+    -11px 0 19px hsla(0, 0%, 9%, 0.3);
+  color: #fff;
+  padding: 3rem;
+  transition: 0.45s cubic-bezier(0.175, 0.585, 0.32, 1.2075);
+  height: 18.5rem;
+  width: 45%;
+  border-radius: 16px;
+  position: absolute;
+  text-align: left;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.card3 {
+  z-index: 3;
+  transform: translateX(40rem);
+}
+.card3:hover {
+  transform: translateX(38rem);
+}
+.card2:hover + .card3 {
+  transform: translateX(43rem);
+}
+.card2 {
+  z-index: 2;
+  transform: translateX(20rem);
+}
+.card2:hover {
+  transform: translateX(15rem);
+}
+.card1:hover + .card2 {
+  transform: translateX(23rem);
+}
+.card1:hover {
+  transform: translateX(-5rem);
+}
+
+.query {
+  display: flex;
+  align-self: center;
+  padding-top: 23rem;
+}
+
+.query p {
+  max-width: 90%;
+}
