@@ -1,0 +1,144 @@
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 6rem;
+  background-color: #f9fdfb;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.ctaDots {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 200px;
+  height: auto;
+  z-index: 0;
+}
+
+.left {
+  flex: 1;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.left h2 {
+  width: 79%;
+  font-size: 3rem;
+  font-family: Mellow-Bold;
+}
+
+.description {
+  width: 72%;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 600px;
+}
+
+.card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.menu > div {
+  flex: 1;
+}
+
+.menu-button {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+}
+
+.menu-button:hover {
+  background-color: #e0e0e0;
+}
+
+.btn {
+  border: none;
+  outline: none;
+}
+
+.item {
+  margin-bottom: 1rem;
+}
+
+.textField {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 32px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.demo {
+  background-color: #003728;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 32px;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.demo:hover {
+  background-color: #00533d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cta {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .left,
+  .right {
+    max-width: 100%;
+  }
+
+  .ctaDots {
+    top: 1rem;
+    left: 1rem;
+    width: 60px;
+  }
+}

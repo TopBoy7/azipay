@@ -2,63 +2,86 @@ import Style from "./CallToAction.module.css";
 
 const CallToAction = () => {
   return (
-    <>
-      <div>
-        <img
-          src="src/components/landingPage/assets/images/cta-dots.png"
-          alt="dots"
-        />
+    <div className={Style.cta}>
+      <img
+        src="src/components/landingPage/assets/images/cta-dots.png"
+        alt="dots"
+        className={Style.ctaDots}
+      />
+
+      <div className={Style.left}>
+        <h2>Get an Exclusive Demo of Eazipay</h2>
+        <p className={Style.description}>
+          Our greatest priority is to put you and your business first. Let's
+          show you how we can help.
+        </p>
       </div>
-      <div className={Style.callToActionContainer}>
-        <div className={Style.callToActionContent}>
-          <h2>Get an Exclusive Demo of Eazipay</h2>
+
+      <div className={Style.right}>
+        <div className={Style.card}>
+          <h4>First things first.</h4>
           <p>
-            Our greatest priority is to put you and your business first. Let's
-            show you how we can help.
+            We want to serve you better. Tell us a bit about yourself and your
+            company.
           </p>
-        </div>
 
-        <div>
-          <div>
-            <h4>First things first.</h4>
-            <p>
-              We want to serve you better. Tell us a bit about yourself and your
-              company.
-            </p>
-
+          <div className={Style.menu}>
             <div>
-              <div>
-                <button>Individual</button>
-              </div>
-
-              <div>
-                <button>Company</button>
-              </div>
+              <button className={`${Style.btn} ${Style["menu-button"]}`}>
+                Individual
+              </button>
             </div>
 
-            <form>
-              <div>
-                <input type="text" placeholder="First Name" />
-              </div>
-
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-
-              <div>
-                <input type="text" placeholder="Job Title" />
-              </div>
-
-              <div>
-                <input type="text" placeholder="Company Size" />
-              </div>
-
-              <button type="submit">Request Demo</button>
-            </form>
+            <div>
+              <button className={`${Style.btn} ${Style["menu-button"]}`}>
+                Company
+              </button>
+            </div>
           </div>
+
+          <form>
+            <div className={Style.item}>
+              <input
+                className={Style.textField}
+                type="text"
+                placeholder="First Name"
+              />
+            </div>
+
+            <div className={Style.item}>
+              <input
+                className={Style.textField}
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div className={Style.item}>
+              <input
+                className={Style.textField}
+                type="text"
+                placeholder="Job Title"
+              />
+            </div>
+
+            <div className={Style.item}>
+              <input
+                className={Style.textField}
+                type="text"
+                placeholder="Company Size"
+              />
+            </div>
+
+            <button
+              className={`${Style.btn} ${Style["menu-button"]} ${Style.demo}`}
+              type="submit"
+            >
+              Request Demo
+            </button>
+          </form>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
