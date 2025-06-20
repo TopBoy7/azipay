@@ -1,6 +1,10 @@
+import { useState } from "react";
 import Style from "./CallToAction.module.css";
+import Toggle from "./toggle";
 
 const CallToAction = () => {
+  const [active, setActive] = useState("individual");
+
   return (
     <div className={Style.cta}>
       <img
@@ -26,17 +30,7 @@ const CallToAction = () => {
           </p>
 
           <div className={Style.menu}>
-            <div>
-              <button className={`${Style.btn} ${Style["menu-button"]}`}>
-                Individual
-              </button>
-            </div>
-
-            <div>
-              <button className={`${Style.btn} ${Style["menu-button"]}`}>
-                Company
-              </button>
-            </div>
+            <Toggle active={active} setActive={setActive} />
           </div>
 
           <form>

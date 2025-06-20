@@ -70,6 +70,9 @@
 .menu {
   display: flex;
   margin-bottom: 1.5rem;
+  border: 1px solid #e7e8e7;
+  border-radius: 8px;
+  padding: 4px;
 }
 
 .menu > div {
@@ -85,15 +88,45 @@
   cursor: pointer;
   font-weight: 500;
   width: 100%;
+  color: #444;
 }
 
-.menu-button:hover {
-  background-color: #e0e0e0;
+.menu-button:focus {
+  background-color: #003728;
+  color: white;
 }
 
 .btn {
   border: none;
   outline: none;
+}
+
+.toggleWrapper {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 4px;
+  background-color: #f3f3f3;
+}
+
+.toggleButton {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Active State */
+.active {
+  background-color: #003728; /* dark green */
+  color: white;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.3); /* light blue glow */
 }
 
 .item {
@@ -120,7 +153,17 @@
 }
 
 .demo:hover {
-  background-color: #00533d;
+  animation: bounce 0.4s ease-in-out forwards;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 /* Responsive Design */
