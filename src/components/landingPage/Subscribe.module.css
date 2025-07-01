@@ -1,0 +1,69 @@
+.subscribeWrapper {
+  background-color: #ffe9e7;
+  background-image: url("src/components/landingPage/assets/images/bg-pattern2.png");
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+.dotsImage {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+
+.subscribeContainer {
+  padding: 3rem;
+}
+
+.row {
+  display: flex;
+}
+
+.subscriberButtonContainer {
+  padding: 1rem;
+  width: 50%;
+}
+
+h2 {
+  color: black !important;
+  width: 74% !important;
+  font-size: 3rem;
+  padding-top: 3rem;
+  margin-top: 3rem;
+}
+
+.red {
+  color: #ea4e4b;
+}
+
+.subscriberButtonContainer p {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.subscribeButton {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.Image {
+  width: 12rem;
+
+  border-radius: 9px;
+  box-shadow: 0 20px 48px #aaaaaa4a;
+  cursor: pointer;
+}
+
+.gplay {
+  margin-right: 0.5rem;
+}
+
+.subscribeImageContainer {
+  padding: 3rem;
+  width: 50%;
+}
+
+.subscribeImage {
+  max-width: 100%;
+}
