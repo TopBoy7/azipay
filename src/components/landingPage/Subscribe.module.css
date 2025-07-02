@@ -1,4 +1,13 @@
 .subscribeWrapper {
+  font-family: Mellow-Bold, sans-serif;
+  background-color: #ffe9e7;
+  background-image: url("src/components/landingPage/assets/images/bg-pattern2.png");
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+.subscribeWrapper {
   background-color: #ffe9e7;
   background-image: url("src/components/landingPage/assets/images/bg-pattern2.png");
   background-size: cover;
@@ -18,6 +27,7 @@
 
 .row {
   display: flex;
+  padding: 3rem;
 }
 
 .subscriberButtonContainer {
@@ -25,9 +35,9 @@
   width: 50%;
 }
 
-h2 {
-  color: black !important;
-  width: 74% !important;
+.subscribeHeading {
+  color: black;
+  width: 74%;
   font-size: 3rem;
   padding-top: 3rem;
   margin-top: 3rem;
@@ -35,6 +45,12 @@ h2 {
 
 .red {
   color: #ea4e4b;
+}
+
+.grey {
+  margin-bottom: 1rem !important;
+  margin-top: 1rem;
+  color: #515251;
 }
 
 .subscriberButtonContainer p {

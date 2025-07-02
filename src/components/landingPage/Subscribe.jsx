@@ -12,11 +12,11 @@ const Subscribe = () => (
               className={Style.dotsImage}
             />
 
-            <h2>
-              Free forever for your
+            <h2 className={Style.subscribeHeading}>
+              Free forever for your{" "}
               <span className={Style.red}>salary payment</span>
             </h2>
-            <p>Subscribe to the easy life today.</p>
+            <p className={Style.grey}>Subscribe to the easy life today.</p>
             <div className={Style.subscribeButton}>
               <img
                 src="src/components/landingPage/assets/images/gplay.png"
