@@ -29,43 +29,36 @@ export default function HowItWorks() {
         </div>
 
         <div className={Style.steps}>
-          <div>
-            <div>
-              <div>
-                <h3>1</h3>
-              </div>
-              <div>
-                <h5>Create your free account</h5>
-                <p>Click here to set up your Eazipay account.</p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <div>
-                <h3>2</h3>
-              </div>
-              <div>
-                <h5>Add Employee Data</h5>
-                <p>Your Employee information is 100% safe and secure.</p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div>
-              <div>
-                <h3>3</h3>
-              </div>
-              <div>
-                <h5>Prepare your transaction</h5>
-                <p>
-                  Run payroll: Bulk Salaries and Compliance are done at once!
-                </p>
+          {[
+            {
+              number: "1",
+              title: "Create your free account",
+              description: "Click here to set up your Eazipay account.",
+            },
+            {
+              number: "2",
+              title: "Add Employee Data",
+              description: "Your Employee information is 100% safe and secure.",
+            },
+            {
+              number: "3",
+              title: "Prepare your transaction",
+              description:
+                "Run payroll: Bulk Salaries and Compliance are done at once!",
+            },
+          ].map((step, idx) => (
+            <div key={idx}>
+              <div className={Style.stepsWrapper}>
+                <div>
+                  <h3>{step.number}</h3>
+                </div>
+                <div>
+                  <h5>{step.title}</h5>
+                  <p>{step.description}</p>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
