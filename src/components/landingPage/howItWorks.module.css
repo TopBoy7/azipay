@@ -1,1 +1,17 @@
- 
+.header3 {
+  text-align: center;
+}
+
+.para3 {
+  text-align: center;
+}
+
+.Wrapper {
+  display: flex;
+  padding: 3rem;
+}
+
+.steps {
+  flex: 1;
+  padding: 3rem;
+}
