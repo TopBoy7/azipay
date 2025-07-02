@@ -11,7 +11,7 @@ const App = () => {
       <Header />
       <HeroSection />
       <FeatureSection />
-      {/* <HowItWorks /> */}
+      <HowItWorks />
       <Subscribe />
       <CallToAction />
       <FootingSection />

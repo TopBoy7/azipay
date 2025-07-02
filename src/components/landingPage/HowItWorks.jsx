@@ -1,14 +1,5 @@
-import styles from "../landingPage/howItWorks.module.css";
+import React from "react";
 
-const HowItWorks = () => (
-  <div className={styles.container}>
-    <h3>How Eazipay Works</h3>
-    <p>Get started in 3 steps.</p>
-    <div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-);
-
-export default HowItWorks;
+export default function HowItWorks() {
+  return <div>HowItWorks</div>;
+}
