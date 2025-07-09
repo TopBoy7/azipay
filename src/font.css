@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Aeonik-Regular";
+  src: url("./fonts/Aeonik/AeonikTRIAL-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aeonik-Bold";
+  src: url("./fonts/Aeonik/AeonikTRIAL-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Mellow-Bold";
+  src: url("./fonts/MadeMellow/MADEMellowPERSONALUSE-Bold.otf")
+    format("opentype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Mellow-Bold";
+}

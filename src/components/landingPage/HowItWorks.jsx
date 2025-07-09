@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Style from "./howItWorks.module.css";
 import onboardBg from "./assets/images/onboard-bg.png";
 

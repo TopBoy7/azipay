@@ -5,6 +5,8 @@ import HowItWorks from "./components/landingPage/HowItWorks";
 import Subscribe from "./components/landingPage/Subscribe";
 import CallToAction from "./components/landingPage/CallToAction";
 import FootingSection from "./components/landingPage/FootingSection";
+
+import "./App.css";
 const App = () => {
   return (
     <div>
