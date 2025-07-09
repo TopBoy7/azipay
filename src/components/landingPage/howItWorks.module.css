@@ -1,9 +1,27 @@
+.onboardWrapper {
+  padding: 3rem 3rem 0;
+  padding-bottom: 8rem;
+  width: 50%;
+}
+
 .header3 {
   text-align: center;
+  color: #11453b;
 }
 
 .para3 {
   text-align: center;
+  color: #515251;
+}
+
+.stepImageWrapper {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.stepImage {
+  width: 100%;
+  border-radius: 56px;
 }
 
 .Wrapper {
@@ -23,4 +41,28 @@
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   margin-bottom: 3rem;
+}
+
+.stepNumber {
+  position: absolute;
+  top: -1.5rem;
+  left: 2.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 15%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #11453b;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.description {
+  color: #515251;
 }
