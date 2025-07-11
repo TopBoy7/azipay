@@ -137,3 +137,6 @@ p {
     margin-bottom: 2rem;
   }
 }
+
+@media (max-width: 425px) {
+}

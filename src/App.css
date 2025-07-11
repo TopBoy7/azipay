@@ -1,5 +1,6 @@
 @import url("./font.css");
 
-body {
+.app {
   font-family: "Aeonik", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }

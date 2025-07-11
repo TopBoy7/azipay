@@ -7,14 +7,6 @@
   position: relative;
 }
 
-.subscribeWrapper {
-  background-color: #ffe9e7;
-  background-image: url("src/components/landingPage/assets/images/bg-pattern2.png");
-  background-size: cover;
-  background-position: 50%;
-  position: relative;
-}
-
 .dotsImage {
   position: absolute;
   top: 0;
@@ -82,4 +74,46 @@
 
 .subscribeImage {
   max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .subscribeContainer {
+    padding: 1rem;
+  }
+
+  .row {
+    flex-direction: column;
+    padding: 0rem;
+  }
+
+  .dotsImage {
+    width: 66px;
+  }
+
+  .subscribeHeading {
+    margin: 1rem;
+    text-align: center;
+    width: auto;
+  }
+
+  .grey {
+    text-align: center;
+  }
+
+  .subscribeButton {
+    justify-content: center;
+  }
+
+  .Image {
+    width: 8rem;
+  }
+
+  .subscribeImageContainer {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .subscribeImage {
+    width: 100%;
+  }
 }

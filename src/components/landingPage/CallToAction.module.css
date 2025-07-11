@@ -166,7 +166,6 @@
   }
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .cta {
     flex-direction: column;
@@ -177,11 +176,18 @@
   .left,
   .right {
     max-width: 100%;
+    padding: 1rem;
+  }
+
+  .left h2,
+  .description {
+    width: 100%;
+    text-align: center;
   }
 
   .ctaDots {
-    top: 1rem;
-    left: 1rem;
-    width: 60px;
+    top: -1rem;
+    left: 0rem;
+    width: 65px;
   }
 }

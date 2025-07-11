@@ -9,7 +9,7 @@ import FootingSection from "./components/landingPage/FootingSection";
 import "./App.css";
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Header />
       <HeroSection />
       <FeatureSection />
