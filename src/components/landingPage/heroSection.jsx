@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div className={styles.heroContainer}>
       <div className={styles.heroText}>
-        <div>
+        <div className={styles.heroTextContainer}>
           <h1>
             Run your <span style={{ color: "#11453b" }}>payroll</span>{" "}
             <span style={{ color: "#b4a572ed" }}>easily</span> <span>in</span>{" "}
@@ -22,10 +22,10 @@ const HeroSection = () => {
 
         <button className={styles.btn1}>Start using free, forever</button>
 
-        <div>
+        <div className={styles.paragraph}>
           <p className={styles.mt}>Download the Eazipay App</p>
         </div>
-        <div>
+        <div className={styles.btnContainer}>
           <img
             src="gplay.png"
             alt="hegoogpleplay"
