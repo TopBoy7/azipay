@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./header.module.css";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className={styles.nav}>
       <div className={styles.navContainer}>
         <div className={styles.logo}>
+          {/* ...SVG logo code... */}
           <svg
             width="122"
             height="32"
@@ -71,6 +74,18 @@ function Header() {
           </svg>
         </div>
 
+        {/* Hamburger Icon */}
+        <button
+          className={styles.hamburger}
+          onClick={() => setMenuOpen((prev) => !prev)}
+          aria-label="Toggle menu"
+        >
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+        </button>
+
+        {/* Desktop Nav */}
         <ul className={styles.navList}>
           <li className={styles.item}>Individual</li>
           <li className={styles.item}>Business</li>
@@ -83,6 +98,30 @@ function Header() {
           <button className={`${styles.button2} ${styles.btn}`}>
             Register
           </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <div
+            className={styles.overlay}
+            onClick={() => setMenuOpen(false)}
+          ></div>
+        )}
+        <div className={`${styles.mobileMenu} ${menuOpen ? styles.open : ""}`}>
+          <ul>
+            <li>Individual</li>
+            <li>Business</li>
+            <li>Pricing</li>
+            <li>Set your Payroll</li>
+          </ul>
+          <div className={styles.mobileButtons}>
+            <button className={`${styles.button1} ${styles.btn}`}>
+              Log in
+            </button>
+            <button className={`${styles.button2} ${styles.btn}`}>
+              Register
+            </button>
+          </div>
         </div>
       </div>
     </nav>
