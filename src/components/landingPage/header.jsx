@@ -1,14 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./header.module.css";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add(styles.noScroll);
+    } else {
+      document.body.classList.remove(styles.noScroll);
+    }
+  }, [menuOpen]);
+
   return (
     <nav className={styles.nav}>
       <div className={styles.navContainer}>
         <div className={styles.logo}>
-          {/* ...SVG logo code... */}
           <svg
             width="122"
             height="32"
@@ -74,9 +81,8 @@ function Header() {
           </svg>
         </div>
 
-        {/* Hamburger Icon */}
         <button
-          className={styles.hamburger}
+          className={`${styles.hamburger} ${menuOpen ? styles.open : ""}`}
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
@@ -85,7 +91,6 @@ function Header() {
           <span className={styles.bar}></span>
         </button>
 
-        {/* Desktop Nav */}
         <ul className={styles.navList}>
           <li className={styles.item}>Individual</li>
           <li className={styles.item}>Business</li>
@@ -100,7 +105,6 @@ function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
           <div
             className={styles.overlay}
