@@ -108,3 +108,42 @@ p {
 .query p {
   max-width: 90%;
 }
+
+@media (max-width: 960px) {
+  .greenCardContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    padding: 1rem;
+  }
+
+  .greenCard {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    color: #11453b;
+    transition: none;
+    height: auto;
+    width: 100%;
+    position: static;
+  }
+  .card1,
+  .card1:hover,
+  .card2,
+  .card2:hover,
+  .card3,
+  .card3:hover {
+    transform: none;
+  }
+  .query {
+    padding-top: 0;
+    margin-left: 4rem;
+    width: 85%;
+  }
+
+  .greenCardContainer p {
+    color: #11453b;
+    margin-bottom: 16px !important;
+    max-width: 100%;
+  }
+}
