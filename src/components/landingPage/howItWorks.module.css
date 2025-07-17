@@ -66,3 +66,80 @@
 .description {
   color: #515251;
 }
+
+@media (max-width: 960px) {
+  .Wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .onboardWrapper {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stepImageWrapper {
+    width: 280px;
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  .stepImage {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+  }
+
+  .steps {
+    width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #2e43c1; /* optional background for mobile step section */
+  }
+
+  .stepsWrapper {
+    display: block;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .stepNumber {
+    position: static;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    color: #11453b;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0f3730;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: #e6e2f5;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .steps {
+    display: none;
+  }
+}
